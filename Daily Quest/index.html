@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Daily Quest</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <h1>Daily Quest</h1>
+  <p><strong>Complete your daily habits. Earn points. Unlock rewards.</strong></p>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <h2>Turn Everyday Tasks into Achievements</h2>
+  <p>
+    Daily Quest is a motivational habit-tracking app that transforms your daily routine into a game.
+    Build habits, prove progress, and unlock fun rewards.
+  </p>
+  <button onclick="scrollToDemo()">Try Demo</button>
+</section>
+
+<!-- ABOUT -->
+<section class="section">
+  <h2>What is Daily Quest?</h2>
+  <p>
+    Daily Quest helps students and young adults stay motivated by turning everyday tasks into achievements.
+    Create task lists across daily, every-other-day, and weekly habits, or track important one-time events like exams and assignments.
+  </p>
+  <p>
+    When you complete a task, submit a photo as proof to earn points — then spend those points in the Arcade
+    to unlock and progress through fun mini-games.
+  </p>
+</section>
+
+<!-- CORE LOOP -->
+<section class="section">
+  <h2>How It Works</h2>
+  <div class="features">
+    <div class="card">Add Tasks</div>
+    <div class="card">Complete Them</div>
+    <div class="card">Snap a Photo</div>
+    <div class="card">Earn Points</div>
+    <div class="card">Unlock Games</div>
+  </div>
+</section>
+
+<!-- FEATURES -->
+<section class="section">
+  <h2>Features</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Smart Task Categories</h3>
+      <p>Daily, every-other-day, weekly, and special calendar tasks.</p>
+    </div>
+    <div class="card">
+      <h3>Photo Verification</h3>
+      <p>Submit proof to earn 10 points per completed task.</p>
+    </div>
+    <div class="card">
+      <h3>Arcade Rewards</h3>
+      <p>Spend points to unlock 5 mini-games with 5 stages each.</p>
+    </div>
+    <div class="card">
+      <h3>Progress Tracking</h3>
+      <p>Track streaks, points, wins, and completed tasks.</p>
+    </div>
+  </div>
+</section>
+
+<!-- GAMES -->
+<section class="section">
+  <h2>Arcade Mini-Games</h2>
+  <div class="features">
+    <div class="card">
+      <h3>Pixel Garden</h3>
+      <p>Grow a pixel garden one tile at a time.</p>
+    </div>
+    <div class="card">
+      <h3>Word Scramble</h3>
+      <p>Unscramble words to progress.</p>
+    </div>
+    <div class="card">
+      <h3>Memory Match</h3>
+      <p>Find matching pairs under time pressure.</p>
+    </div>
+    <div class="card">
+      <h3>Snake Lite</h3>
+      <p>A classic arcade experience with increasing difficulty.</p>
+    </div>
+    <div class="card">
+      <h3>Trivia Quest</h3>
+      <p>Answer questions and climb through stages.</p>
+    </div>
+  </div>
+</section>
+
+<!-- SCREENSHOTS -->
+<section class="section">
+  <h2>App Screens</h2>
+  <div class="screenshots">
+
+    <img src="images/dashboard.png" alt="Dashboard">
+    <img src="images/tasks.png" alt="Tasks">
+    <img src="images/arcade.png" alt="Arcade">
+
+    <img src="images/pixel_garden.jpeg" alt="Pixel Garden">
+    <img src="images/word_scramble.jpeg" alt="Word Scramble">
+    <img src="images/memory_match.jpeg" alt="Memory Match">
+    <img src="images/snake.jpeg" alt="Snake Lite">
+    <img src="images/trivia.jpeg" alt="Trivia Quest">
+
+  </div>
+</section>
+
+<!-- VISUAL STYLE -->
+<section class="section">
+  <h2>Design Philosophy</h2>
+  <p>
+    Daily Quest uses warm orange and cream tones with a clean, modern interface.
+    The app focuses on simplicity, clarity, and satisfying micro-interactions
+    to celebrate progress and keep users motivated.
+  </p>
+</section>
+
+<!-- DEMO -->
+<section class="section demo" id="demo">
+  <h2>Interactive Demo</h2>
+
+  <input type="text" id="taskInput" placeholder="Enter a task">
+  
+  <select id="taskType">
+    <option value="daily">Daily</option>
+    <option value="everyOther">Every Other Day</option>
+    <option value="weekly">Weekly</option>
+    <option value="special">Special</option>
+  </select>
+
+  <button onclick="addTask()">Add Task</button>
+
+  <ul id="taskList"></ul>
+
+  <div class="points">Points: <span id="points">0</span></div>
+</section>
+
+<!-- CTA -->
+<section class="section">
+  <h2>Start Your Quest</h2>
+  <p>Build habits. Stay accountable. Make progress every day.</p>
+</section>
+
+<footer>
+  <p>Daily Quest • Habit Tracking Reimagined</p>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
